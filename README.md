@@ -91,7 +91,17 @@ Move   file: test/f1.txt -> sub/test/f1.txt
 - https://github.com/gorakhargosh/watchdog/issues/775
     - Deleting a folder is detected as deleting a file
 - https://github.com/gorakhargosh/watchdog/issues/393
-    - Moving files is detected as _deleting then creating a file_
+    - Moving files is detected as _deleting then creating a file_ (test case: `given a folder with 20 files, move all files to root`)
     - Move events on windows:
         - a file is renamed in place (in the same folder)
         - renaming a folder in place (all child items also have Move event)
+- When moving a folder, events are unintuitive: (test case: `given a folder with 10 files, move the folder to a subfolder`)
+    1. Delete original folder (**File** deleted event is fired instead)
+    2. **("Delete files in original folder" is never fired)**
+    3. Create destination folder
+    4. Create files in destination folder
+
+### Unix
+
+- Has a unique event type: `closed`
+    - Can be ignored safely
