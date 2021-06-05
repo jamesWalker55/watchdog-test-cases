@@ -1,0 +1,169 @@
+BASIC OPERATIONS
+
+20210605_142712_956242
+create a folder and file, rename the file, then remove the file
+Create dir : test
+Create file: test\a.txt
+Modify file: test\a.txt
+Modify dir : test
+Move   file: test\a.txt -> test\a_new.txt
+Modify dir : test
+Delete file: test\a_new.txt
+Modify dir : test
+
+20210605_142714_970387
+create a file, then move it to a different folder
+Create file: A\a.txt
+Modify file: A\a.txt
+Delete file: A\a.txt
+Create file: B\a.txt
+Modify dir : B
+
+MOVING FILES
+
+20210605_142716_975247
+create a file, then move it to a different folder and rename at the same time
+Create file: A\a.txt
+Modify file: A\a.txt
+Delete file: A\a.txt
+Create file: B\a_new.txt
+Modify dir : B
+
+20210605_142719_002135
+given a folder with 20 files, move all files to root
+Delete file: test\f0.txt
+Create file: f0.txt
+Delete file: test\f1.txt
+Create file: f1.txt
+Delete file: test\f2.txt
+Create file: f2.txt
+Delete file: test\f3.txt
+Create file: f3.txt
+Delete file: test\f4.txt
+Create file: f4.txt
+Delete file: test\f5.txt
+Create file: f5.txt
+Delete file: test\f6.txt
+Create file: f6.txt
+Delete file: test\f7.txt
+Create file: f7.txt
+Delete file: test\f8.txt
+Create file: f8.txt
+Delete file: test\f9.txt
+Create file: f9.txt
+Delete file: test\f10.txt
+Create file: f10.txt
+Delete file: test\f11.txt
+Create file: f11.txt
+Delete file: test\f12.txt
+Create file: f12.txt
+Delete file: test\f13.txt
+Create file: f13.txt
+Delete file: test\f14.txt
+Create file: f14.txt
+Delete file: test\f15.txt
+Create file: f15.txt
+Delete file: test\f16.txt
+Create file: f16.txt
+Delete file: test\f17.txt
+Create file: f17.txt
+Delete file: test\f18.txt
+Create file: f18.txt
+Delete file: test\f19.txt
+Create file: f19.txt
+
+20210605_142721_019279
+given a folder with 10 files, move the folder to a subfolder
+Modify dir : test
+Delete file: test
+Create dir : sub\test
+Create file: sub\test\f0.txt
+Create file: sub\test\f1.txt
+Create file: sub\test\f2.txt
+Create file: sub\test\f3.txt
+Create file: sub\test\f4.txt
+Create file: sub\test\f5.txt
+Create file: sub\test\f6.txt
+Create file: sub\test\f7.txt
+Create file: sub\test\f8.txt
+Create file: sub\test\f9.txt
+Modify dir : sub
+
+20210605_142723_037300
+given a folder with 10 files, rename the folder
+Move   file: test\f0.txt -> new_folder\f0.txt
+Move   file: test\f1.txt -> new_folder\f1.txt
+Move   file: test\f2.txt -> new_folder\f2.txt
+Move   file: test\f3.txt -> new_folder\f3.txt
+Move   file: test\f4.txt -> new_folder\f4.txt
+Move   file: test\f5.txt -> new_folder\f5.txt
+Move   file: test\f6.txt -> new_folder\f6.txt
+Move   file: test\f7.txt -> new_folder\f7.txt
+Move   file: test\f8.txt -> new_folder\f8.txt
+Move   file: test\f9.txt -> new_folder\f9.txt
+Move   dir : test -> new_folder
+Modify dir : new_folder
+
+20210605_142725_051680
+given a folder with 3 files and 1 subfolder with 3 files, rename the folder
+Move   dir : base\sub -> new_folder\sub
+Move   file: base\a0.txt -> new_folder\a0.txt
+Move   file: base\a1.txt -> new_folder\a1.txt
+Move   file: base\a2.txt -> new_folder\a2.txt
+Move   file: base\sub\b0.txt -> new_folder\sub\b0.txt
+Move   file: base\sub\b1.txt -> new_folder\sub\b1.txt
+Move   file: base\sub\b2.txt -> new_folder\sub\b2.txt
+Move   dir : base -> new_folder
+Modify dir : new_folder
+Modify dir : new_folder\sub
+
+20210605_142727_067513
+create a folder with 3 files, then move all files outside observed area
+Delete file: f0.txt
+Delete file: f1.txt
+Delete file: f2.txt
+
+20210605_142729_091958
+move 3 files from outside observed area to inside observed area
+Create file: f0.txt
+Create file: f1.txt
+Create file: f2.txt
+
+DELETING FILES
+
+20210605_142731_109657
+given a folder with 5 files, delete each file
+Delete file: test\f0.txt
+Delete file: test\f1.txt
+Delete file: test\f2.txt
+Delete file: test\f3.txt
+Delete file: test\f4.txt
+
+20210605_142733_116664
+given a folder with 10 files, delete the folder
+Modify dir : test
+Delete file: test\f0.txt
+Delete file: test\f1.txt
+Delete file: test\f2.txt
+Delete file: test\f3.txt
+Delete file: test\f4.txt
+Delete file: test\f5.txt
+Delete file: test\f6.txt
+Delete file: test\f7.txt
+Delete file: test\f8.txt
+Delete file: test\f9.txt
+Delete file: test
+
+20210605_142736_122781
+given a folder with 3 files and 1 subfolder with 3 files, delete the folder
+Modify dir : base
+Delete file: base\a0.txt
+Delete file: base\a1.txt
+Delete file: base\a2.txt
+Modify dir : base\sub
+Delete file: base\sub\b0.txt
+Delete file: base\sub\b1.txt
+Delete file: base\sub\b2.txt
+Delete file: base\sub
+Delete file: base
+
