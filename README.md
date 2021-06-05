@@ -43,6 +43,47 @@ Modify dir : test
 
 The events fired by `watchdog` are inconsistent between operating systems, this script helps me figure out how each operating system handles each test case.
 
+On Windows:
+
+```
+20210605_142721_019279
+given a folder with 10 files, move the folder to a subfolder
+Modify dir : test
+Delete file: test
+Create dir : sub\test
+Create file: sub\test\f0.txt
+Create file: sub\test\f1.txt
+Create file: sub\test\f2.txt
+Create file: sub\test\f3.txt
+Create file: sub\test\f4.txt
+Create file: sub\test\f5.txt
+Create file: sub\test\f6.txt
+Create file: sub\test\f7.txt
+Create file: sub\test\f8.txt
+Create file: sub\test\f9.txt
+Modify dir : sub
+```
+
+On Ubuntu:
+
+```
+20210605_145451_761323
+given a folder with 10 files, move the folder to a subfolder
+Move   dir : test -> sub/test
+Modify dir : .
+Modify dir : sub
+Move   file: test/f5.txt -> sub/test/f5.txt
+Move   file: test/f4.txt -> sub/test/f4.txt
+Move   file: test/f3.txt -> sub/test/f3.txt
+Move   file: test/f8.txt -> sub/test/f8.txt
+Move   file: test/f7.txt -> sub/test/f7.txt
+Move   file: test/f6.txt -> sub/test/f6.txt
+Move   file: test/f0.txt -> sub/test/f0.txt
+Move   file: test/f9.txt -> sub/test/f9.txt
+Move   file: test/f2.txt -> sub/test/f2.txt
+Move   file: test/f1.txt -> sub/test/f1.txt
+```
+
 ## Inconsistencies per operating system
 
 ### Windows
