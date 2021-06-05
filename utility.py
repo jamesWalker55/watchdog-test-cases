@@ -80,7 +80,10 @@ PREFIX_MAP = {
 
 
 def event_to_log(event: FileSystemEvent, relative_to: Path = None):
-    action = PREFIX_MAP[event.event_type]
+    if event.event_type in PREFIX_MAP:
+        action = PREFIX_MAP[event.event_type]
+    else:
+        action = event.event_type
     item = "dir " if event.is_directory else "file"
     if event.event_type == "moved":
         src = Path(event.src_path)
