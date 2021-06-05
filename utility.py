@@ -75,6 +75,7 @@ PREFIX_MAP = {
     "modified": "Modify",
     "deleted": "Delete",
     "moved": "Move  ",
+    "closed": "Close "
 }
 
 
